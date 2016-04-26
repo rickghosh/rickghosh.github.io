@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hi</title>
+		<style> 
+		body{background-color:black;color:white;};
+		</style>
+	</head>
+	
+	<body style="background-color:black;color:white;">
+		<button onclick="pleasework()">Click here for Dice rolls</button>
+		<a id=text></a>
+		<h id=text2></h>
+		<script>
+			function pleasework(){
+				
+					var rng = Math.floor((Math.random()*6)+1)
+					var rnge = Math.floor((Math.random()*6)+1)
+					var rnges = Math.floor((Math.random()*6)+1)
+					document.getElementById("text").innerHTML= "<br>Your dice rolled "+rng+","+rnge+" and,"+rnges+"<br><br>"
+					var sum= rng+rnge+rnges
+					document.getElementById("text2").innerHTML= "The sum of the dice rolls is <br>"+sum
+				
+				
+			}
+		</script>
+	</body>
+</html> 
+
+
+

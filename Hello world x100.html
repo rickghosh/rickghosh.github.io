@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hi</title>
+		<style> 
+		body{background-color:black;color:white;};
+		</style>
+	</head>
+	
+	<body style="background-color:black;color:white;">
+		How many times?
+		<input id= "stuff"></input>
+		
+		
+		<a id=text></a>
+		<h id=text2></h>
+		<form onchange="idek(thanks.value)">
+			<input id= "thanks" type="radio" name="font" value="1"> Arial<br>
+			<input id= "thanks" type="radio" name="font" value="3"> Papyrus<br>
+			<input id= "thanks" type="radio" name="font" value="2"> Times New Roman
+		</form>	
+		<script>
+			function idek(x){
+			var userInput = parseInt(document.getElementById("stuff").value);
+			document.getElementById("text").innerHTML=""
+			if(x==1){
+				for (i=1;i<userInput+1;i++){
+					document.getElementById("text").innerHTML+="<br>"+i+".Hello World<br>"
+					document.getElementById("text").style.fontFamily = "arial";
+				}
+			}else if(x==2){
+				for (i=1;i<userInput+1;i++){
+					document.getElementById("text").innerHTML+="<br>"+i+".Hello World<br>"
+					document.getElementById("text").style.fontFamily = "Times New Roman"
+				}
+			} else if(x== 3){
+				for (i=1;i<userInput+1;i++){
+						document.getElementById("text").innerHTML+="<br>"+i+".Hello World<br>"
+						document.getElementById("text").style.fontFamily = "papyrus";
+					}
+			}
+				document.getElementById("text2").innerHTML="<br>What font?"
+			}
+			
+		</script>
+	</body>
+</html> 
+
+
+

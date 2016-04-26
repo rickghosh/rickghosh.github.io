@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hi</title>
+		<style> 
+		body{background-color:black;color:white;};
+		</style>
+	</head>
+	
+	<body style="background-color:black;color:white;">
+		All the PRIME numbers from 0 to
+		<input id= "stuff" onchange=primer()></input> are
+		<br>
+
+		<a id=text></a>
+		<h id=text2></h>
+		<script>
+		function primer(){
+			document.getElementById("text").innerHTML="";
+			var number= parseInt(document.getElementById("stuff").value);
+			//document.getElementById("text").innerHTML= "<br>"+number
+			
+			for (var a= 2; a<=number; a++){
+				var money=0;
+				for(var i=2; i<a; i++){
+					
+					if(a%i==0){
+						money++
+					}
+					
+				} 
+				if(money==0){
+					document.getElementById("text").innerHTML+= i+"<br> ";
+					
+				}
+			}
+		}
+		
+		</script>
+	</body>
+</html> 
+
+
+
